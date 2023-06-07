@@ -1,8 +1,0 @@
-version: 2
-
-sources:
-  - name: snowflake_data
-    database: analytics_runar  
-    schema: snowflake_data  
-    tables:
-      - name: lineitem
