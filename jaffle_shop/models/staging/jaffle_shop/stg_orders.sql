@@ -3,4 +3,6 @@ select
     user_id as customer_id,
     order_date,
     status
-from raw_runar.jaffle_shop.orders
+from {{ source('jaffle_shop', 'orders') }}
+
+{{load_dev_data(1)}}
